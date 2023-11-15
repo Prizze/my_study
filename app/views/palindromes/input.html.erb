@@ -1,0 +1,8 @@
+<h1>Введите n:</h1>
+<%= form_with url: "/res", method: :get do |form| %>
+  <%= form.label :query, "n:" %>
+  <%= form.text_field :query %>
+ <a href = "/res"> <%= form.submit "Ввести" %> </a>
+<% end %>
+
+

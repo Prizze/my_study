@@ -1,0 +1,13 @@
+<h1> Таблица палиндромов</h1>
+<table>
+<tr>
+    <th> Число </th> <th> Квадрат </th>
+</tr>
+<% @palindromes.each do |cur| %>
+    <tr>
+        <th> <%=cur[0]%></th> <th> <%=cur[1]%> </th>
+    </tr>
+<%end%>
+</table>
+<p> Количество палиндромов: <%= @count%> </p>
+<a href = "/">ещё раз </a>
